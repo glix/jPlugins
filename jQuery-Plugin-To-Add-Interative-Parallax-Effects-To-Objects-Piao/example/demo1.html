@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>piao demo</title>
+        <style>
+	        body{
+	        	background:black;
+	        	height:100%;
+	        	width:100%;
+	        }
+	        .out{
+	        	width:500px;
+	        	height:500px;
+	        	background:white;
+	        	margin:50px auto;
+	        	position:relative;
+	        }
+	        .ball2{
+        		border-radius:50%;
+        		background:YellowGreen;
+        		position:absolute;
+        		width:100px;
+        		height:100px;
+        		top:185px;
+        		left:202px;
+        		z-index:4;
+        	}
+        	.ball1{
+        		border-radius:50%;
+        		background:indianred;
+        		position:absolute;
+        		width:50px;
+        		height:50px;
+        		top:150px;
+        		left:120px;
+        	}
+        	
+        	.ball3{
+        		border-radius:50%;
+        		background:CornflowerBlue;
+        		position:absolute;
+        		width:80px;
+        		height:80px;
+        		top:280px;
+        		left:355px;
+        		z-index:5;
+        	}
+        	.ball4{
+        		border-radius:50%;
+        		background:LightSlateGray;
+        		position:absolute;
+        		width:20px;
+        		height:20px;
+        		top:100px;
+        		left:400px;
+        	}
+        	.ball5{
+        		border-radius:50%;
+        		background:LightSalmon;
+        		position:absolute;
+        		width:20px;
+        		height:20px;
+        		top:50px;
+        		left:50px;
+        	}
+        	.ball6{
+        		border-radius:50%;
+        		background:Khaki;
+        		position:absolute;
+        		width:50px;
+        		height:50px;
+        		top:250px;
+        		left:50px;
+        	}
+        	.ball7{
+        		border-radius:50%;
+        		background:DarkGreen;
+        		position:absolute;
+        		width:10px;
+        		height:10px;
+        		top:50px;
+        		left:300px;
+        	}
+        	.ball8{
+        		border-radius:50%;
+        		background:Pink;
+        		position:absolute;
+        		width:120px;
+        		height:120px;
+        		top:350px;
+        		left:200px;
+        	}
+        </style>
+    </head>
+    <body>
+    	<div class="out">
+    		<div class="ball1"></div>
+    		<div class="ball2"></div>
+    		<div class="ball3"></div>
+    		<div class="ball4"></div>
+    		<div class="ball5"></div>
+    		<div class="ball6"></div>
+    		<div class="ball7"></div>
+    		<div class="ball8"></div>
+    	</div>
+        
+        <script src="../lib/jquery.js"></script>
+        <script type="text/javascript" src="../piao.js"></script>
+        <script type="text/javascript">
+        	/*$('.out').piao([
+        		{
+	        		item : $('.ball1'),
+	        		xrate : 1,
+	        		yrate :1,
+	        		invert : true
+	        	},
+        		{
+	        		item : $('.ball2'),
+	        		xrate : 0.1,
+	        		yrate :0.1,
+	        		stop:true
+	        	},
+        		{
+	        		item : $('.ball3'),
+	        		xrate : 20,
+	        		yrate :20
+	        	},
+        		{
+	        		item : $('.ball4'),
+	        		xrate : 20,
+	        		yrate :5,
+	        		invert : true
+	        	},
+        		{
+	        		item : $('.ball5'),
+	        		xrate : 20,
+	        		yrate :50
+	        	},
+        		{
+	        		item : $('.ball6'),
+	        		xrate : 60,
+	        		yrate :15
+	        	},
+        		{
+	        		item : $('.ball7'),
+	        		xrate : 120,
+	        		yrate :20,
+	        		invert : true
+	        	},
+        		{
+	        		item : $('.ball8'),
+	        		xrate : 20,
+	        		yrate :50
+	        	}
+        	]).css({background:'white'})*/
+        	
+        	$('.ball1').piao({
+        		init_position:{
+        			x:15,
+        			y:15	
+        		},
+        		limit:{
+        			x:30,
+        			y:30
+        		},
+        		change_rate:{
+        			x:0.1,
+        			y:0.2
+        		}
+        	});
+        	$('.ball2').piao({
+        		init_left:20
+        	})
+        	
+        </script>
+    </body>
+</html>
