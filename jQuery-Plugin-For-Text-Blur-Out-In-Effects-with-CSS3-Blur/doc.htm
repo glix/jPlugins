@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>jQuery Blur | Chris Cates</title>
+		<meta name="viewport" content="width=device-width, minimal-ui">
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">
+				<h1>jQuery Blur</h1>
+				<h2>by Chris Cates</h2>
+				
+			</div>
+			<div class="content">
+				<h2 style="text-indent: 5%;">jQuery Blur gives your text a nice blur effect. Its simple and its awesome.
+				Its purpose is to be a fancier version of fadeOut and fadeIn.</h2>
+				<h2>Setup is easy</h2>
+				<h3>You will need jQuery Transit. Since jQuery Animate does not support CSS3 Transforms.</h3>
+<pre class="1">
+&#60;script type="text/javascript" src="jquery.js"&#62;&#60;/script&#62;
+&#60;script type="text/javascript" src="jquery.blur.js"&#62;&#60;/script&#62;
+&#60;script type="text/javascript" src="jquery.transit.js"&#62;&#60;/script&#62;
+</pre>	
+				<h2>Download</h2>
+				<h3><a href="jquery.blur.js">jquery.blur.js</a></h3>
+				<h3><a href="jquery.blur.min.js">jquery.blur.min.js</a></h3>
+				<h3><a href="http://ricostacruz.com/jquery.transit/" target="_blank">jquery.transit.js</a></h3>
+				<h2>Blur works in one line and supports function chaining.</h2>
+				<h3><a class="Example1" bColor="green">First Click me to blur out and in</a></h3>
+<pre class="2">
+$('.Example1').click(function() {
+	$(this).blurOut(1000).blurIn(2000);
+	/*
+	There is only one parameter. Which is determines the ms 
+	it takes to complete the animation.
+	eg: $.blurOut(500); will take 500ms (half a second).
+	*/
+});
+</pre>
+				<h2>You can also change the default black blur color by using the bColor attribute.</h2>
+<pre class="1">
+&#60;h3 bColor="green"&#62;First Click me to blur out and in&#60;/h3&#62;
+</pre>
+				<h2>The Javascript works similar to jquerys hide... However to make the element appear again</h2>
+<pre class="2">
+$('your element').css({opacity: 1});
+/*
+	In CSS: it would be the same, opacity: 1;
+*/
+</pre>
+				<h2 style="font-family: Arial">That is everything! Any questions or comments just email me at codeviolet@chriscates.ca</h2>
+
+			</div>
+		</div>
+
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sh.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.js"></script>
+		<script type="text/javascript" src="js/jquery.fittext.js"></script>
+		<script type="text/javascript" src="js/jquery.snippet.min.js"></script>
+		<script type="text/javascript" src="jquery.blur.js"></script>
+ 		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.title h1').fitText(1.25);
+			$('.title h2').fitText(2);
+			$('.content h2').fitText(3);
+			$('.content h3').fitText(4);
+			
+			$('pre').fitText(5);
+			$("pre.1").snippet("html", {style:'whitengrey'});
+			$("pre.2").snippet("javascript", {style:'whitengrey'});
+			
+			$('.Example1').click(function() {
+				$(this).blurOut(1000).blurIn(2000);
+			});
+			$('.Example2').click(function() {
+				$(this).blurOut('box').blurIn('box');
+			});
+			
+			setInterval(function() {
+				$('.title h2').blurOut(1000).blurIn(2000);
+			},3000);
+			
+		});
+		
+
+		</script>
+	</body>
+</html>
