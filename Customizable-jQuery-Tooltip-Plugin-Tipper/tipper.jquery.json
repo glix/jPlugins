@@ -1,0 +1,33 @@
+{
+  "name": "tipper",
+  "version": "3.0.3",
+  "title": "Tipper",
+  "author": {
+    "name": "Ben Plum",
+    "email": "mr@benplum.com",
+    "url": "http://www.benplum.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "description": "A jQuery plugin for simple tooltips. Part of the formstone library.",
+  "keywords": [
+    "tooltip",
+    "ui",
+    "javascript",
+    "jquery",
+    "formstone",
+    "benplum"
+  ],
+  "docs": "http://formstone.it/tipper/",
+  "demo": "http://formstone.it/tipper/",
+  "download": "https://github.com/benplum/Tipper",
+  "bugs": "https://github.com/benplum/Tipper/issues",
+  "homepage": "http://formstone.it/tipper/"
+}
